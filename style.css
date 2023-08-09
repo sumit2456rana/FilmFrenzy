@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Oswald:wght@400;700&family=Poppins:wght@200;300;400&family=Roboto:ital,wght@0,500;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: #001F3F;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-weight: 700;
+    font-family: 'Roboto' , sans-serif;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.scrolled{
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2);
+}
+.sign-in {
+    height: 25px;
+    width: 90px;
+    
+    background-color: #FFFFF0;
+    padding: 6px 12px;
+    margin-right: 70px;
+    border: none;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: larger;
+    transition: 0.5s;
+    padding-bottom: 10px;
+}
+header .sign-in:hover {
+    transform: scale(1.05);
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    background-color: #FFFFF0;
+    font-family: 'Roboto' , sans-serif;
+}
+footer {
+    text-align: center;
+    background-color: #001F3F;
+    padding: 15px;
+    color: #ddd;
+    font-family: 'Roboto' , sans-serif;
+    /* position: static; */
+    width: 100%;
+    bottom: 0;
+}
+
+.search-cont {
+    padding-top: 80px;
+    margin: 25px;
+    text-align: center;
+}
+#search-box {
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+    background-color: #FFFFF0;
+    border: 2px solid #001F3F;
+    border-radius: 5px;
+    margin-right: 8px;
+    font-family: 'Roboto' , sans-serif;
+}
+.btn {
+    cursor: pointer;
+    border: none;
+    background-color: #FFD700;
+    border-radius: 5px;
+    padding: 9px 30px;
+    font-size: 18px;
+    color: #FFFFF0;
+    font-family: 'Roboto' , sans-serif;
+}
+.sorting-btns {
+    text-align: center;
+    font-size: 10px;
+}
+.sorting-btns button {
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.favor {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.favor > button {
+    margin-right: 10px;
+}
+.active-tab {
+    background-color: #001F3F;
+    color: white;
+}
+.pagination {
+    text-align: center;
+}
+#prev-btn  , #next-btn {
+    background-color: #001F3F;
+    margin-left: 3px;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+.movie-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.cards {
+    position: relative;
+    /* background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/942.jpg"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 240px;
+    height: 350px; 
+    margin: 15px;
+    border-radius: 10px;
+}
+  
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9));
+    border-radius: 10px;
+}
+  
+.content {
+    z-index: 1;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+.fa-heart {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.red {
+    color: #FE251B;
+}
+.description {
+    position: absolute;
+    bottom: 20px;
+}
+.title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+.adult {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+}
+.votes {
+    display: flex;
+    font-size: 13px;
+}
+#voting {
+    margin-right: 10px;
+}
+.star {
+    padding-left: 5px;
+}
+#rating {
+    margin-left: 10px;
+}
+.movie-list .cards:hover .gradient-overlay {
+    display: none; /* Hide the gradient overlay on hover if you prefer */
+  }
+.movies-container {
+    width: 90%;
+    margin: 30px auto;
+}
+.year {
+    font-size: 16px;
+    color: #ddd;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.pagination {
+    margin-top: 30px;
+}
+#curr-btn {
+    background-color: #FFFFF0;
+    font-size: 18px;
+}
+.hidden {
+    display: none;
+}
+.noMovie {
+    height: 307px;
+}
+.noMovie div {
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Roboto' , sans-serif;
+}
+.noMovie div h2 > svg {
+    margin-top: 10px;
+}
+.loader {
+    margin-top: 20px;
+    border: 4px solid #001F3F;
+    border-top: 4px solid #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width : 400px) {
+    header a h1 {
+        font-size: 1.6em;
+    }
+    header {
+        padding-left: 25px;
+        height: 30px;
+    }
+    .sign-in {
+        display: block;
+        width: 90px;
+        height: 23px;
+        margin-bottom: 10px;
+        margin-right: 50px;
+    }
+    #search-box  {
+        height: 35px;
+        width: 205px;
+    }
+    .btn {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    .sorting-btns button {
+        margin-bottom: 10px;
+    }
+    #prev-btn ,  #next-btn {
+        background-color: #001F3F;
+        margin-left: 3px;
+        padding: 10px 15px;
+        font-size: 0.8rem;
+        border-radius: 10px;
+    }
+    #curr-btn {
+        font-size: 15px;
+    }
+    
+}

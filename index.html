@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmFrenzy</title>
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=512&id=111158&format=png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        
+        <a href="#">
+            <h1>FilmFrenzy</h1>
+        </a>
+        <a href="./login.html" class="sign-in">Sign in🤘</a>
+    </header>
+    <div class="search-cont">
+        <input type="search" id="search-box" placeholder="Search a movie....">
+        <button id="search-btn" class="btn">Search</button>
+    </div>
+    <div class="sorting-btns">
+        <button class="btn" id="sort-by-date">Sort by date (oldest to latest)</button>
+        <button class="btn" id="sort-by-rating">Sort by rating (least to most)</button>
+    </div>
+
+    <div class="favor">
+        <button id="all-tab" class="active-tab btn">All</button>
+        <button id="fav-tab" class="btn">Favourites</button>
+    </div>
+
+    <div class="movies-container">
+        <div class="loader" id="loader"></div>
+        <ul class="movie-list">
+            <!-- <li class="cards" style="background-image: url('https://image.tmdb.org/t/p/original/bQl46uhGPTu9jnIRE9Ip2xOMc9M.jpg');">
+                <div class="gradient-overlay"></div>
+                <div class="content">
+                    <p class="adult">U/A 13+</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <section class="description">
+                        <p class="title">Avengers : Endgame</p>
+                        <section class="votes">
+                            <p id="voting">Votes: 22873</p>|
+                            <p id="rating">Rating : 9.4</p>
+                        </section>
+                    </section>
+                </div>    
+            </li> -->
+        </ul>
+
+        <div class="pagination">
+            <button class="btn" id="prev-btn"><< Previous Page</button>
+            <span id="curr-btn"></span>
+            <button class="btn" id="next-btn">Next Page >></button>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2023 FilmFrenzy - Sumit Rana</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/6af35060a2.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
