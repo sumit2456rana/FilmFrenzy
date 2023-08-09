@@ -12,6 +12,7 @@ async function fetchMovies() {
     try {
         loader.style.display = "block";
         footer.style.position = "fixed";
+        footer.style.width = "100%"
         document.querySelector(".pagination").classList.add("hidden")
         const resp = await fetch(`https://api.themoviedb.org/3/movie/top_rated?&api_key=${APIKEY}&include_adult=false&language=en-US&page=${currPage}`);
         const data = await resp.json();
@@ -22,8 +23,9 @@ async function fetchMovies() {
     catch (error) {
         console.log(error);
     } finally {
-        loader.style.display = "none";
+        loader.style.display = "none"; 
         footer.style.position = "static";
+        footer.style.width = "auto";
         document.querySelector(".pagination").classList.remove("hidden")
     }
 }
