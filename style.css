@@ -219,7 +219,7 @@ ul {
     display: none;
 }
 .noMovie {
-    height: 307px;
+    height: 323.5px;
 }
 .noMovie div {
     margin-top: 100px;
@@ -285,5 +285,7 @@ ul {
     #curr-btn {
         font-size: 15px;
     }
-    
+    .noMovie {
+        height: 285px;
+    }
 }
