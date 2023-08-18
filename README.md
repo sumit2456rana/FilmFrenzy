@@ -39,3 +39,6 @@ Technologies used in the project:
   <img src="ScreenShots/Screenshot (51).png" alt="project-screenshot" width="400" height="400/"> 
   <img src="ScreenShots/Screenshot (52).png" alt="project-screenshot" width="400" height="400/">
 </p>
+
+<h3>Thank you for visiting 'FilmFrenzy'!</h3>
+<h4>Happy movie watching and enjoy the magic of cinema. 🎬✨</h4>
