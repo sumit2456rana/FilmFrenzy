@@ -36,6 +36,6 @@ Technologies used in the project:
 <img src="ScreenShots/Screenshot (48).png" alt="project-screenshot" width="1000" height="400/">
 <h3>Login & Sign up Page : </h3>
 <p float="left">
-  <img src="ScreenShots/Screenshot (51).png" alt="project-screenshot" width="450" height="450/"> 
-  <img src="ScreenShots/Screenshot (52).png" alt="project-screenshot" width="450" height="450/">
+  <img src="ScreenShots/Screenshot (51).png" alt="project-screenshot" width="400" height="400/"> 
+  <img src="ScreenShots/Screenshot (52).png" alt="project-screenshot" width="400" height="400/">
 </p>
