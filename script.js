@@ -182,6 +182,7 @@ async function fetchSearchMovies() {
 function onSearchChange(event) {
     currentSearch = event.target.value;
     if(currentSearch) {
+        currPage = 1;
         fetchSearchMovies();
     }else{
         fetchMovies();
