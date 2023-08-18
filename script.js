@@ -75,6 +75,11 @@ function renderMovies(movies) {
 
         let res = favMovies.find((eFavMovie) => eFavMovie.id == id);
         let stringifyContent = JSON.stringify(mInfo);
+        // console.log(stringifyContent)
+        if(stringifyContent.includes("'")){
+            stringifyContent = stringifyContent.replace("'" , "");
+        }
+        console.log(stringifyContent);
         listItems.innerHTML = `
                 <div class="gradient-overlay"></div>
                 <div class="content">
@@ -145,9 +150,11 @@ const searchBox = document.getElementById("search-box");
 searchbtn.addEventListener("click" , searchMovies)
 
 async function searchMovies() { 
+    
     const search_text = searchBox.value;
     currentSearch = search_text;
     try {
+        currPage = 1;
         loader.style.display = "block"; // Show the loader
         const resp = await fetch(`https://api.themoviedb.org/3/search/movie?query=${search_text}&api_key=${APIKEY}&include_adult=false&language=en-US&page=${currPage}`)
         const data = await resp.json();
@@ -341,7 +348,6 @@ function displayMovies() {
 function renderFavMovies() {
     ul.innerHTML = "";
     const favMovies = getFavMoviesFromLocalStorage();
-    console.log(favMovies);
     if(favMovies.length === 0) {
         let li = document.createElement("li");
         li.className = "noMovie"
@@ -354,7 +360,7 @@ function renderFavMovies() {
                 </h2>
             </div>
         `
-        ul.appendChild(li);
+        ul.append(li);  
         prevBtn.classList.add("hidden");
         nextBtn.classList.add("hidden");
         currBtn.classList.add("hidden");
@@ -409,8 +415,9 @@ function renderFavMovies() {
     
                 // this will remove the card from the ui
                 event.target.parentElement.parentElement.remove();
+
+                
             })
-    
             ul.appendChild(listItems);
         })
     }
